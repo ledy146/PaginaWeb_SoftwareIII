@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sección de encabezado -->
+    <!-- Se define el ícono de la página -->
+    <link rel="icon" type="image/png" href="../imagenes/iconoF1.ico">
+    <!-- Se establece la codificación y la escala inicial del viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Fórmula 1</title>
+    <!-- Se enlaza la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Se enlaza el archivo de JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Se enlaza la hoja de estilos externa -->
+    <link rel="stylesheet" href="../CSS/stylesPrincipal.css">
+</head>
+
+<body>
+    <!-- Sección de encabezado -->
+    <header>
+        <!-- Título principal -->
+        <h1 class="titulo">FÓRMULA 1 <span class="badge text-bg-secondary"></span></h1>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <!-- Botón de menú hamburguesa -->
+            <button class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <!-- Contenedor del menú -->
+            <div class="menu-container">
+                <!-- Lista de elementos del menú -->
+                <ul class="menu">
+                    <!-- Elementos del menú -->
+                    <li><a class="text-Header" href="#Definition" rel="noopener noreferrer"><button type="button"
+                                class="btn btn-dark position-relative" len="190">
+                                <font lang="es"> Definición</font>
+                            </button></a></li>
+                    <li><a class="text-Header" href="#History" rel="noopener noreferrer"><button type="button"
+                                class="btn btn-dark position-relative" len="190">
+                                <font lang="es"> Historia </font>
+                            </button></a></li>
+                    <li><a class="text-Header" href="#Drivers" rel="noopener noreferrer"><button type="button"
+                                class="btn btn-dark position-relative" len="190">
+                                <font lang="es"> Pilotos </font>
+                            </button></a></li>
+                    <li><a class="text-Header" href="contacto.html" rel="noopener noreferrer"><button type="button"
+                                class="btn btn-dark position-relative" len="190">
+                                <font lang="es"> Contacto </font>
+                            </button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Carrusel de inicio-->
+    <div id="carousel-1" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../imagenes/teams.jpg" class="d-block w-60 h-700" alt="Scuderia Ferrari,
+                Mercedes-AMG Petronas Motorsport,
+                Red Bull Racing Honda,
+                McLaren F1 Team,
+                Alpine F1 Team,
+                Aston Martin Aramco Cognizant F1 Team,
+                Alfa Romeo F1 Team ORLEN,
+                Scuderia AlphaTauri,
+                Williams Racing,
+                MoneyGram Haas F1 Team.">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="../imagenes/logo.webp" class="d-block w-50 h-700" alt="La Fórmula 1, o F1, es la categoría más alta del automovilismo internacional para monoplazas de carreras de fórmula abierta con un solo asiento.">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/pilotosS.jpg" class="d-block w-50 h-700" alt="Max Verstappen. Equipo: Red Bull Racing.
+                Logan Sargeant. Equipo: Williams. 
+                Daniel Ricciardo. Equipo: Scuderia AlphaTauri. 
+                Lando Norris. Equipo: McLaren F1. 
+                Pierre Gasly. Equipo: Alpine. 
+                Sergio Pérez. Equipo: Red Bull Racing. 
+                Fernando Alonso. Equipo: Aston Martin Racing. 
+                Charles Leclerc. Equipo: Ferrari.">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Contenido de la página -->
+
+    <!-- Sección de Definición -->
+    <div class="Definición" id="Definition">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+
+                    <p class="mb-4">La <a href="https://www.formula1.com" rel="noopener noreferrer">Fórmula
+                            1</a> o F1, de la
+                        FIA. Desde su creación en 1950, ha sido el campeonato de automovilismo más prestigioso del mundo y se le ha descrito como "la cúspide del deporte motor".​ La entidad que la dirige es la <a
+                            href="https://www.fia.com/es/la-fia" rel="noopener noreferrer">Federación Internacional del
+                            Automóvil
+                            (FIA)</a>.
+                        </p>
+
+                    <p class="mb-4">La temporada generalmente consta de hasta 21 carreras, conocidas como Grandes Premios, que se celebran en diferentes países del mundo. Las carreras suelen disputarse en circuitos permanentes de Grado 1 de la Federación Internacional del Automóvil (FIA), pero algunas se corren en circuitos callejeros temporales.</p>
+                    <p class="mb-4">El Campeonato Mundial consta de dos campeonatos independientes, uno para pilotos y otro para constructores. Los pilotos y constructores acumulan puntos en cada carrera, y el campeonato se otorga al piloto o constructor que acumula la mayor cantidad de puntos a lo largo de la temporada. Los puntos de constructores son una combinación de los resultados de ambos pilotos del equipo.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="image-description">
+                        <img src="../imagenes/fórmula1.webp" class="img-fluid"
+                            alt="La F1 es una competencia de carreras de la Federación Internacional del Automóvil (FIA). Foto: shutterstock"
+                            width="400" height="341" />
+                        <img src="../imagenes/fórmula1.2.jpg" class="img-fluid"
+                            alt="La F1 es una competencia de carreras de la Federación Internacional del Automóvil (FIA). Foto: shutterstock"
+                            width="400" height="341" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección de Historia -->
+    <div class="Historia" id="History">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Comienzos de la Fórmula 1</h2>
+                    <div class="image-history d-flex flex-wrap mb-5">
+                        <img src="../imagenes/history1.jpg" class="img-fluid" alt="1950: Inicio del Campeonato Mundial de Fórmula 1">
+                        <img src="../imagenes/history2.jpg" class="img-fluid" alt="Década de 1950: Juan Manuel Fangio domina la era con 5 títulos mundiales.">
+                        <img src="../imagenes/history3.jpg" class="img-fluid" alt="Década de 1960: Jackie Stewart introduce medidas de seguridad en el deporte.">
+                        <img src="../imagenes/history4.jpg" class="img-fluid" alt="Década de 1970: Niki Lauda y James Hunt protagonizan una rivalidad legendaria.">
+                    </div>
+
+
+
+                    <ol class="list-unstyled">
+                        <li>
+                            <b>Orígenes y Comienzo:</b>
+                            <ul>
+                                <li>En 1900, se celebró un evento trascendental en el mundo de las carreras: James
+                                    Gordon Bennett
+                                    Jr. creó la Copa Gordon Bennett en Europa. Esta carrera anual atrajo competidores
+                                    internacionales y permitía que cada país inscribiera hasta tres autos.</li>
+                                <li>Siguiendo este ejemplo, el millonario William Kissam Vanderbilt II lanzó la Copa
+                                    Vanderbilt en
+                                    Estados Unidos en 1904.
+                                    Louis Chevrolet, un suizo que trabajaba para un constructor francés, se convirtió en
+                                    una figura
+                                    principal en las carreras de Estados Unidos desde 1901. Diseñó vehículos de General
+                                    Motors que
+                                    llevaban su nombre.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Arranca el Primer Gran Premio:</b>
+                            <ul>
+                                <li>En 1906, se organizó la primera y única carrera que llevaba el nombre de Gran
+                                    Premio. Fue
+                                    organizada por el Club del Automóvil de Francia (CAF) y se corrió durante dos días
+                                    en Le Mans,
+                                    Francia.</li>
+                                <li>El circuito tenía una longitud total por vuelta de 105 kilómetros y los pilotos
+                                    necesitaban
+                                    cerca de una hora para completar un giro.</li>
+                                <li>El ganador de esta carrera de 1,260 km fue el húngaro Ferenc Szisz, al volante de un
+                                    Renault.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Creación de la Fórmula 1:</b>
+                            <ul>
+                                <li>En 1950, como respuesta al Campeonato Mundial de Motociclismo, la Federación
+                                    Internacional de
+                                    Automovilismo (FIA) organizó el primer Campeonato Mundial de Pilotos.</li>
+                                <li>Se utilizaron las reglas de la Fórmula 1 esbozadas tras la Gran Guerra.</li>
+                                <li>Así nació la Fórmula 1 moderna, con escuderías icónicas como Ferrari, Alfa Romeo y
+                                    Maserati
+                                    participando en las primeras temporadas.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p class="mb-4">En resumen, la Fórmula 1 es una mezcla de velocidad, tecnología y pasión, y su
+                        historia está llena de
+                        momentos emocionantes y leyendas del automovilismo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Pilotos -->
+
+    <div class="drivers" id="Drivers">
+
+        <h2>
+            ¿Cuáles Son Los Tres Mejores Pilotos De La Fórmula 1?
+        </h2>
+        <!--Carrusel de pilotos-->
+        <div id="carousel-2" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../imagenes/1.png" class="d-block  h-70" alt="Max Verstappen: el talento holandés que domina la Fórmula 1.">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../imagenes/2.png" class="d-block h-70" alt="Sergio (Checo) Pérez: El orgullo de México en la Fórmula 1.">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/3.png" class="d-block h-70" alt="Charles Leclerc: El talento monegasco que desafía a los grandes de la Fórmula 1.">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/4.png" class="d-block  h-70" alt="Lewis Hamilton: 7 títulos mundiales (2008, 2014, 2015, 2017, 2018, 2019, 2020).">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/5.png" class="d-block  h-70" alt="Oliver Bearman: La joven promesa británica de la Fórmula 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/6.png" class="d-block h-70" alt="Carlos Sainz Jr.: Consistente y rápido, un piloto clave en la Fórmula 1.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Información sobre Lewis Hamilton -->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h3 class="text-center"><a href="https://es.wikipedia.org/wiki/Lewis_Hamilton"
+                            rel="noopener noreferrer">1. Lewis Hamilton - 103 victorias</a></h3>
+
+                    <img src="../imagenes/lewisHamilton.jpg" class="img-fluid mx-auto d-block"
+                        alt="Lewis Carl Davidson Larbalestier Hamilton​​ es un piloto británico de automovilismo"
+                        width="400" height="341">
+                    <!-- Detalles sobre Lewis Hamilton -->
+                    <h4>Logros y récords</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">Primera carrera: Gran Premio de Australia 2007</li>
+                        <li class="list-group-item">Campeonatos del Mundo: 7 (2008, 2014-15, 2017-20)</li>
+                        <li class="list-group-item">Número de carreras: 310</li>
+                        <li class="list-group-item">Número de victorias: 103</li>
+                        <li class="list-group-item">Número de pole positions: 103</li>
+                        <li class="list-group-item">Puntos en su carrera: 4405.5</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5><strong>Nacimiento e infancia:</strong></h5>
+                    <p class="mb-4">
+                        Lewis Carl Davidson Hamilton nació el 7 de enero de 1985 en Stevenage, Hertfordshire,
+                        Inglaterra. Su padre, Anthony Hamilton, es un granadino-británico y su madre, Carmen
+                        Larbalestier, es una británica blanca. Lewis tiene un hermano menor llamado Nicolas.
+                    </p>
+                    <h5><strong>Inicios en el automovilismo:</strong></h5>
+
+                    <p class="mb-4">Su pasión por el automovilismo comenzó a temprana edad. A los seis años, su padre le
+                        regaló un
+                        kart y Lewis comenzó a competir en carreras locales. Rápidamente se destacó por su talento y
+                        habilidad al volante. En 1998, a la edad de 13 años, fue fichado por el programa de jóvenes
+                        pilotos de McLaren.</p>
+
+                    <h5><strong>Carrera profesional:</strong></h5>
+
+                    <p><u> <strong>2007-2012: McLaren</strong></u></p>
+                    <p class="mb-4">En 2007, Hamilton debutó en la Fórmula 1 con McLaren, convirtiéndose en el primer
+                        piloto negro en
+                        la historia de la categoría. En su primera temporada, terminó en tercer lugar en el Campeonato
+                        Mundial de Pilotos, lo que le valió el premio al Novato del Año. En 2008, a la edad de 23 años,
+                        Hamilton se convirtió en el campeón mundial más joven de la historia, superando el récord de
+                        Michael Schumacher. Ganó el título nuevamente en 2014 y 2015.</p>
+
+                    <p><u><strong>2013-presente: Mercedes</strong> </u></p>
+
+                    <p class="mb-4">En 2013, Hamilton se unió al equipo Mercedes AMG Petronas Motorsport. Desde
+                        entonces, ha ganado
+                        siete títulos mundiales más (2017, 2018, 2019, 2020, 2021, 2022 y 2023), empatando con Michael
+                        Schumacher como el piloto con más títulos en la historia de la Fórmula 1.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Información sobre Michael Schumacher -->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h3><a href="https://es.wikipedia.org/wiki/Michael_Schumacher" rel="noopener noreferrer">2. Michael
+                            Schumacher - 91 victorias</a></h3>
+                    <img src="../imagenes/MichaelS.jpg" class="img-fluid mx-auto d-block"
+                        alt="Michael Schumacher es un expiloto alemán de automovilismo. Ha ganado siete veces el Campeonato Mundial de Fórmula 1."
+                        width="400" height="341">
+                    <!-- Detalles sobre Michael Schumacher -->
+                    <h4>Logros y récords:</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">Primera carrera: Gran Premio de Bélgica 1991</li>
+                        <li class="list-group-item">Campeonatos del Mundo: 7 (1994-95, 2000-04)</li>
+                        <li class="list-group-item">Número de carreras: 308</li>
+                        <li class="list-group-item">Número de victorias: 91</li>
+                        <li class="list-group-item">Número de poles: 68</li>
+                        <li class="list-group-item">Puntos en su carrera: 1566</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5><strong>Nacimiento e infancia:</strong></h5>
+                    <p class="mb-4">Michael Schumacher, nacido el 3 de enero de 1969 en Hürth-Hermülheim, Alemania, es
+                        un expiloto de
+                        Fórmula 1 legendario. Reconocido por su talento excepcional, su dominio en la escudería Ferrari
+                        y sus siete campeonatos mundiales, Michael se consagró como uno de los deportistas más laureados
+                        del automovilismo.
+                    </p>
+                    <h5><strong>Los primeros pasos en el mundo del motor:</strong></h5>
+
+                    <p class="mb-4">Su pasión por las carreras nació a temprana edad. A los cuatro años ya conducía un
+                        kart y a los
+                        12 años ganó su primer campeonato alemán júnior. Su talento deslumbró en las categorías
+                        inferiores, logrando el título alemán de Fórmula König en 1988 y el campeonato de Fórmula 3
+                        Alemana en 1990.</p>
+
+                    <h5><strong>Debut en la Fórmula 1 y primeros éxitos:</strong></h5>
+
+                    <p class="mb-4">En 1991 debutó en la máxima categoría del automovilismo con el equipo Jordan. Su
+                        ascenso fue
+                        meteórico. Al año siguiente fichó por Benetton, escudería con la que consiguió sus dos primeros
+                        campeonatos mundiales en 1994 y 1995, frente a leyendas como Damon Hill.</p>
+
+                    <h5><strong>La era dorada con Ferrari:</strong></h5>
+
+                    <p class="mb-4"> En 1996 fichó por Ferrari, equipo con el que soñaba desde niño. El camino al éxito
+                        no fue
+                        inmediato. Tuvo que esperar hasta el año 2000 para cosechar su primer título con la escudería
+                        italiana. A partir de ese momento, comenzó la era dorada de Schumacher y Ferrari. Cinco
+                        campeonatos consecutivos (2000-2004) lo consolidaron como el piloto más dominante de la historia
+                        en ese entonces.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Información sobre Sebastian Vettel -->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h3 class="text-center"><a href="https://es.wikipedia.org/wiki/Sebastian_Vettel"
+                            rel="noopener noreferrer">3. Sebastian Vettel - 53 victorias</a></h3>
+                    <img src="../imagenes/sebastian.webp" class="img-fluid mx-auto d-block"
+                        alt="Sebastian Vettel es un piloto alemán de automovilismo. Llegó formando parte del Equipo Júnior de Red Bull desde los 11 años."
+                        width="400" height="341">
+                    <!-- Detalles sobre Sebastian Vettel -->
+                    <h4>Logros y récords:</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">Primera carrera: Gran Premio de Estados Unidos 2007</li>
+                        <li class="list-group-item">Campeonatos del Mundo: 4 (2010-2013)</li>
+                        <li class="list-group-item">Número de carreras: 310</li>
+                        <li class="list-group-item">Número de victorias: 53</li>
+                        <li class="list-group-item">Número de poles: 57</li>
+                        <li class="list-group-item">Puntos en su carrera: 3098</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5><strong>Nacimiento e inicios en el automovilismo:</strong></h5>
+
+                    <p class="mb-4">Sebastian Vettel nació el 3 de julio de 1987 en Heppenheim, Alemania. Su pasión por
+                        las carreras
+                        comenzó a temprana edad. A los tres años ya conducía un kart y a los ocho años comenzó a
+                        competir en carreras de karts. Rápidamente se destacó por su talento y habilidad al volante.</p>
+
+                    <h5><strong>Carrera en la Fórmula 1:</strong></h5>
+
+                    <p><u><strong>2007-2014: Toro Rosso y Red Bull</strong> </u></p>
+
+                    <p class="mb-4">En 2007, Vettel debutó en la Fórmula 1 con el equipo Toro Rosso, filial de Red Bull.
+                        En 2008, a
+                        la edad de 21 años, se convirtió en el piloto más joven en ganar un Gran Premio, en el Gran
+                        Premio de Italia. En 2009, Vettel se unió al equipo Red Bull y ganó su primer campeonato mundial
+                        de Fórmula 1. Ganó el título nuevamente en 2010, 2011, 2012 y 2013, convirtiéndose en el piloto
+                        más joven en ganar cuatro campeonatos mundiales consecutivos.</p>
+
+                    <p><u><strong>2015-2020: Ferrari</strong> </u></p>
+                    <p class="mb-4">En 2015, Vettel se unió al equipo Ferrari. Aunque no pudo ganar el campeonato
+                        mundial, logró 14
+                        victorias y 54 podios con la escudería italiana.</p>
+                    <p><u><strong>2021-presente: Aston Martin</strong> </u></p>
+
+                    <p class="mb-4">En 2021, Vettel se unió al equipo Aston Martin. En su primera temporada con el
+                        equipo, no logró
+                        obtener ningún podio.</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tabla de los 10 Pilotos Legendarios -->
+    <h2>Top 10 Pilotos Legendarios de la Fórmula 1</h2>
+    <table class=" table-dark">
+        <thead>
+            <tr>
+                <th scope="col">No. Top</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">No. Podios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Lewis Hamilton</td>
+                <td>192</td>
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Michael Schumacher</td>
+                <td>91</td>
+
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Sebastian Vettel</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Alain Prost</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Ayrton Senna</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Max Verstappen</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Fernando Alonso</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Nigel Mansell</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Jackie Stewart</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td> Niki Lauda </td>
+                <td>25</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!-- Sección de Pie de página -->
+    <footer class="text-center">
+        <p>&copy; 2024 Practica HTML/CSS/JS/BOOTSTRAP -Todos los derechos reservados.</p>
+        <p><a href="www...">Política de Privacidad</a> | <a href="www...">Términos de Servicio</a></p>
+    </footer>
+    <!-- Se incluye el archivo de JavaScript -->
+    <script src="../JS/script-principal.js"></script>
+</body>
+
+</html>

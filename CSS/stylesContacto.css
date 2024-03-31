@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Estilos generales del cuerpo del documento */
+body {
+  font-family: "Poppins", sans-serif; /*  Se usa la fuente 'Poppins' como predeterminada */
+  background: linear-gradient(
+      to left,
+      transparent,
+      #006da4,
+      #006494,
+      transparent,
+      #004d74,
+      #003554,
+      transparent,
+      #022b42,
+      transparent,
+      #032030,
+      transparent
+    ),
+    url("../imagenes/fórmula1.1.webp"); /* Define un degradado lineal de fondo y una imagen de fondo */
+}
+h1,
+p {
+  color: white; /* Color del texto para diferentes elementos */
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+  text-align: center; /* Alinea el texto al centro */
+}
+p {
+  text-align: justify; /* Justifica el texto dentro de los párrafos */
+  width: 80%; /* Ancho máximo de los párrafos */
+  margin: 0 auto; /* Centra horizontalmente los párrafos */
+}
+.btn-volver {
+  text-align: center;
+}
+/* Estilos para los enlaces */
+a {
+  color: white; /* Color del texto para diferentes elementos */
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+  text-align: center; /* Alinea el texto al centro */
+  text-shadow: 2px 2px rgb(83, 101, 153); /* Sombra de texto para los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+form {
+  max-width: 400px; /*Establece el ancho máximo del formulario en 400 píxeles.*/
+  margin: 50px auto; /*Establece un margen superior e inferior y centrará horizontalmente el formulario*/
+  padding: 20px; /*Agrega un espacio dentro del borde del formulario.*/
+  background-color: #fff; /*Establece el color de fondo del formulario*/
+  border-radius: 5px; /*Aplica un radio de borde redondear las esquinas del formulario*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Agrega una sombra alrededor del formulario para darle una apariencia tridimensional*/
+}
+
+label {
+  display: block; /* Establece las etiquetas como bloques*/
+  margin-bottom: 10px; /*Agrega un margen inferior */
+  color: #333; /* Color del texto */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Establece el ancho de los campos de entrada*/
+  padding: 10px; /*Agrega un espacio dentro del borde de los campos de entrada y el área de texto*/
+  margin-bottom: 20px; /*Agrega un margen inferior a los campos de entrada y el área de texto*/
+  border: 1px solid #ccc; /*Define un borde */
+  border-radius: 3px; /*Aplica un radio de borde redondear las esquinas del formulario*/
+  box-sizing: border-box; /*Especifica el modelo de caja para incluir el relleno y el borde en el ancho total del elemento*/
+}
+
+/*Estilos de los botones*/
+button {
+  background-color: black; /* Color de fondo del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border: none; /* Sin borde en el botón */
+  padding: 16px 32px; /* Espaciado interno del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: 15px; /* Tamaño de fuente del botón */
+  font-weight: bold; /* Grosor de la fuente del botón */
+  position: relative; /* Posición relativa del botón */
+  border-radius: 12px; /* Radio de borde del botón */
+}
+/* Estilos para el efecto de fondo de los botones */
+button::before {
+  content: ""; /* Contenido antes del botón */
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  z-index: -1; /* Z-index para colocar detrás del botón */
+  width: 100%; /* Ancho del efecto */
+  height: 100%; /* Altura del efecto */
+  background: linear-gradient(
+    45deg,
+    rgb(4, 53, 109),
+    white,
+    rgb(6, 104, 209),
+    rgb(42, 163, 234)
+  ); /* Gradiente lineal de fondo */
+  background-size: 800%; /* Tamaño del fondo */
+  border-radius: 10px; /* Radio de borde del efecto */
+  filter: blur(8px); /* Desenfoque del efecto */
+  animation: glowing 20s linear infinite; /* Animación del efecto */
+}
+/* Animación del efecto de fondo de los botones */
+@keyframes glowing {
+  0% {
+    background-position: 0; /* Posición inicial del fondo */
+  }
+  50% {
+    background-position: 400% 0; /* Posición intermedia del fondo */
+  }
+  100% {
+    background-position: 0; /* Posición final del fondo */
+  }
+}
+/* Estilos para el pie de página */
+footer {
+  width: 100%; /* Ancho del pie de página */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Color de fondo del pie de página con transparencia */
+  padding: 10px 0; /* Espaciado interno superior e inferior del pie de página */
+  margin-top: 50px; /* Margen superior del pie de página */
+}
+
+/* Estilos para párrafos dentro del pie de página */
+footer p {
+  text-align: center; /* Alineación del texto en el pie de página */
+}

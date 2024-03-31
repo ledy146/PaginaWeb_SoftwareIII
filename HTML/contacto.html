@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../imagenes/contacto.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="../CSS/stylesContacto.css"><!-- Enlace a una hoja de estilos externa -->
+</head>
+
+<body>
+    <h1 class="titulo">CONTACTANOS <span class="badge text-bg-secondary"></span></h1><!-- Titulo principal de la página -->
+    <div class="container">
+        <div class="descriptcion">
+          <p>Estamos encantados de saber de ti. Si tienes alguna pregunta, sugerencia o simplemente quieres decir hola, no dudes en contactarnos utilizando el formulario a continuación. ¡Estamos aquí para ayudarte!</p>
+        </div>
+      </div>
+    <div class="btn-volver">
+        <a href="index.html"><button>Home</button></a>
+    </div>
+     <!-- Sección de Formulario  -->
+     <form id="contactForm">
+        <div class="mb-3">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          <label for="Email1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          <div id="emailHelp " class="form-text ">Nunca compartiremos tu correo electrónico con nadie más.
+            </div>
+          <label for="message ">Mensaje:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+    <!-- Sección de Pie de página -->
+    <footer class="text-center">
+        <p>&copy; 2024 Practica HTML/CSS/JS/BOOTSTRAP  -Todos los derechos reservados.</p>
+        <p><a href="www...">Política de Privacidad</a> | <a href="www...">Términos de Servicio</a></p>
+      </footer>
+    <script src="../JS/script-contacto.js"></script>
+
+</body>
+
+</html>
+
+
+  

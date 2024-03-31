@@ -1,0 +1,282 @@
+/* Se importa la fuente 'Poppins' desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Estilos generales del cuerpo del documento */
+body {
+  font-family: "Poppins", sans-serif; /* Se usa la fuente 'Poppins' como predeterminada */
+  background: linear-gradient(
+      to left,
+      transparent,
+      #006da4,
+      #006494,
+      #004d74,
+      #003554,
+      transparent,
+      #022b42,
+      #032030,
+      transparent
+    ),
+    url("../imagenes/fórmula1.1.webp"); /* Define un degradado lineal de fondo y una imagen de fondo */
+}
+
+/* Estilos del encabezado */
+header {
+  position: sticky; /* El encabezado se mantiene pegado en la parte superior de la ventana */
+  top: 0px; /* La posición del encabezado en la parte superior */
+  background-color: #021427; /* Color de fondo del encabezado */
+  padding: 2px 2px; /* Espaciado interno superior e inferior del encabezado */
+  text-align: center; /* Alinea el texto al centro dentro del encabezado */
+  z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos de los botones */
+.btn-dark {
+  background-color: rgb(0, 0, 0); /* Color de fondo del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border: none; /* Sin borde en el botón */
+  padding: 16px 32px; /* Espaciado interno del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: 15px; /* Tamaño de fuente del botón */
+  font-weight: bold; /* Grosor de la fuente del botón */
+  position: relative; /* Posición relativa del botón */
+  border-radius: 12px; /* Radio de borde del botón */
+}
+
+/* Estilos para el efecto de fondo de los botones */
+.btn-dark::before {
+  content: ""; /* Contenido antes del botón */
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  z-index: -1; /* Z-index para colocar detrás del botón */
+  width: 100%; /* Ancho del efecto */
+  height: 100%; /* Altura del efecto */
+  background: linear-gradient(
+    45deg,
+    rgb(4, 53, 109),
+    white,
+    rgb(6, 104, 209),
+    rgb(42, 163, 234)
+  ); /* Gradiente lineal de fondo */
+  background-size: 800%; /* Tamaño del fondo */
+  border-radius: 10px; /* Radio de borde del efecto */
+  filter: blur(8px); /* Desenfoque del efecto */
+  animation: glowing 20s linear infinite; /* Animación del efecto */
+}
+
+/* Animación del efecto de fondo de los botones */
+@keyframes glowing {
+  0% {
+    background-position: 0; /* Posición inicial del fondo */
+  }
+  50% {
+    background-position: 400% 0; /* Posición intermedia del fondo */
+  }
+  100% {
+    background-position: 0; /* Posición final del fondo */
+  }
+}
+
+/* Estilos de los elementos de menú en el encabezado */
+.menu li {
+  display: inline-block; /* Muestra los elementos de menú en línea uno al lado del otro */
+  margin-right: 20px; /* Margen derecho entre los elementos de menú */
+  color: #fff; /* Color del texto del menú */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex; /* Muestra los elementos de la barra de navegación como un flexbox */
+  justify-content: center; /* Centra horizontalmente los elementos de la barra de navegación */
+  align-items: center; /* Centra verticalmente los elementos de la barra de navegación */
+}
+
+/* Estilos para el icono del menú desplegable */
+.hamburger-menu {
+  display: none; /* Oculta el icono del menú desplegable por defecto */
+  border: #fff; /* Establece un borde blanco para el icono */
+  background: #032a3e; /* Establece un color de fondo oscuro para el icono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  padding: 10px; /* Espaciado interno del icono */
+}
+
+/* Estilos para las líneas del icono del menú desplegable */
+.line {
+  display: block; /* Muestra las líneas del icono del menú desplegable como bloques */
+  width: 25px; /* Establece el ancho de las líneas */
+  height: 3px; /* Establece la altura de las líneas */
+  background: whitesmoke; /* Color de fondo de las líneas */
+  margin: 5px auto; /* Margen exterior para centrar verticalmente las líneas */
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+  display: flex; /* Muestra los elementos del menú desplegable como un flexbox */
+}
+
+/* Media query para pantallas con ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+  }
+
+  .hamburger-menu {
+    display: block; /* Muestra el icono del menú desplegable en pantallas pequeñas */
+  }
+
+  .menu {
+    align-items: center; /* Centra horizontalmente los elementos del menú */
+    display: none; /* Oculta el menú desplegable por defecto */
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    position: absolute; /* Establece la posición absoluta del menú */
+    left: 0; /* Coloca el menú en el borde izquierdo */
+    background-color: #064a67; /* Color de fondo del menú desplegable */
+    padding: 20px; /* Espaciado interno del menú */
+    border: 10px solid black; /* Borde sólido negro alrededor del menú */
+  }
+
+  .menu li {
+    align-items: center; /* Centra horizontalmente los elementos de la lista */
+    margin-right: 30px; /* Margen derecho entre los elementos de la lista */
+    margin-bottom: 20px; /* Margen inferior entre los elementos de la lista */
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último elemento de la lista */
+  }
+
+  .menu.open {
+    display: flex; /* Muestra el menú desplegable cuando se activa */
+  }
+}
+
+/* Estilos generales para textos */
+h1,
+h2,
+h4,
+h5,
+a,
+b,
+p {
+  color: white; /* Color del texto para diferentes elementos */
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.titulo {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+/* Estilos para los enlaces */
+a {
+  text-shadow: 2px 2px rgb(83, 101, 153); /* Sombra de texto para los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+/* Estilos para los párrafos */
+p {
+  text-align: justify; /* Justifica el texto dentro de los párrafos */
+  width: 80%; /* Ancho máximo de los párrafos */
+  margin: 0 auto; /* Centra horizontalmente los párrafos */
+}
+
+/* Estilos para las imágenes */
+@keyframes show {
+  from {
+    opacity: 0; /* Opacidad inicial de la animación */
+    scale: 25%; /* Escala inicial de la animación */
+  }
+  to {
+    opacity: 1; /* Opacidad final de la animación */
+    scale: 100%; /* Escala final de la animación */
+  }
+}
+
+img {
+  view-timeline-name: --revelading-image; /* Nombre de la animación */
+  animation-name: show; /* Nombre de la animación para mostrar la imagen */
+  animation-fill-mode: both; /* Relleno de la animación */
+  animation-timeline: --revelading-image; /* Línea de tiempo de la animación */
+  animation-range: entry 25% cover 50%; /* Rango de animación */
+  width: 500px; /* Ancho máximo de las imágenes */
+  height: 300px; /* Altura máxima de las imágenes */
+  display: block; /* Muestra las imágenes como elementos de bloque */
+  margin: 0 auto; /* Centra horizontalmente las imágenes */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilos para las imágenes en la historia */
+.image-history img {
+  margin: 0;
+  display: inline-block; /* Muestra las imágenes en línea */
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+li {
+  list-style-type: square; /* Tipo de viñeta de lista */
+  text-align: justify; /* Justificación del texto de lista */
+  color: #fff; /* Color del texto de los elementos de lista */
+  margin: 0 auto; /* Centra horizontalmente los elementos de lista */
+
+  /* Ajustar ancho según sea necesario */
+  width: 70%;
+}
+
+/* Estilos para las list-group */
+.list-group li {
+  border: 0.3px solid rgb(5, 48, 69);
+  border-width: 20px;
+  color: rgb(7, 7, 7);
+  background-color: #e4ecf1;
+  list-style-type: square;
+}
+
+/* Estilos generales para tablas */
+table {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  border-collapse: separate; /* Separación de bordes de celdas */
+}
+
+/* Estilos para celdas de tabla */
+th,
+td {
+  border: 2px solid rgb(147, 229, 229); /* Borde de celdas */
+  padding: 2px; /* Espaciado interno de celdas */
+  text-align: center; /* Alineación del texto en celdas */
+  color: white; /* Color del texto en celdas */
+}
+
+/* Estilos para encabezados de tabla */
+th {
+  background-color: #0b4350; /* Color de fondo de encabezados */
+  color: rgb(255, 255, 255); /* Color del texto de encabezados */
+}
+
+/* Estilos para el pie de página */
+footer {
+  width: 100%; /* Ancho del pie de página */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Color de fondo del pie de página con transparencia */
+  color: #fff; /* Color del texto del pie de página */
+  padding: 10px 20px; /* Espaciado interno superior e inferior del pie de página */
+  margin-top: 50px; /* Margen superior del pie de página */
+}
+
+/* Estilos para párrafos dentro del pie de página */
+footer p {
+  text-align: center; /* Alineación del texto en el pie de página */
+}
